@@ -1,0 +1,14 @@
+<footer class="footer">
+  <small>
+    <%= raw t ".content", rails: link_to(t(".rails"),
+      "http://www.railstutorial.org/"), michael: link_to(t(".michael"),
+      "http://www.michaelhartl.com/") %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t("about"), about_path %></li>
+      <li><%= link_to t("contact"), contact_path %></li>
+      <li><%= link_to t("new"), "http://news.railstutorial.org/" %></li>
+    </ul>
+  </nav>
+</footer>

@@ -23,15 +23,31 @@ en:
   title: "Ruby on Rails Tutorial Sample App"
   english: "English"
   vietnam: "Vietnam"
+  home: "Home"
+  help: "Help"
+  about: "About"
+  contact: "Contact"
+  sign: "Log in"
+  new: "New"
 
   #module
+  layouts:
+    header:
+      logo: "sample app"
+
+    footer:
+      content: The %{rails} by %{michael}
+      rails: Ruby on Rails Tutorial
+      michael: Michael Hartl
+
   static_pages:
     home:
       title: "Home"
       description: "Sampe App"
       homecontent: "This is the home page for the %{org} sample application."
       org: "Ruby on Rails Tutorial"
-    
+      logo: "Sign up now!"
+
     help:
       title: "Help"
       description: "Help"
@@ -50,10 +66,16 @@ en:
       railsbook: "book"
       screencastsrails: "screen"
       rubyonrails: "Ruby on Rails Tutorial"
-        
+
     contact:
       title: "Contact"
       description: "Contact"
       contactcontent: "Contact the Ruby on Rails Tutorial
         about the sample app at the %{tut}."
       contact: "contact page"
+
+  users:
+    new:
+      title: "New"
+      description: "Newspaper"
+      newcontent: "Find me in app/views/users/new.html.erb"

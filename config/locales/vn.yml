@@ -23,15 +23,32 @@ vn:
   title: "huong dan su dung"
   english: "tieng anh"
   vietnam: "tieng viet"
+  home: "Trang chu"
+  help: "Tro giup"
+  about: "Gioi thieu"
+  contact: "Lien he"
+  sign: "Dang nhap"
+  new: "Tin moi"
 
   #module
+  layouts:
+    layouts:
+    header:
+      logo: "ung dung"
+
+    footer:
+      footercontent: "%{rails} boi %{michael}"
+      rails: Ngon ngu da quy tren duong ngot
+      michael: Michael Hartl
+
   static_pages:
     home:
       title: "trang chu"
       description: "xem ung dung"
       homecontent: "day la trang chu %{org} voi mot vai vi du."
       org: "huong dan su dung ruby on rails"
-    
+      logo: "Dang nhap"
+
     help:
       title: "tro giup"
       description: "giup hieu hon ve san pham"
@@ -49,10 +66,16 @@ vn:
       railsbook: "chu de ve rails"
       screencastsrails: "phan chieu tren rails"
       rubyonrails: "voi ngon ngu ruby on rails"
-        
+
     contact:
       title: "Lien he"
       description: "Lien he chi tiet"
       contactcontent: "Lien he de duoc huong dan su dung
         ngon ngu ruby them %{tut}."
       contact: "trang lien he"
+
+  users:
+    new:
+      title: "Tin moi"
+      description: "Tin tuc"
+      newcontent: "duong dan in app/views/users/new.html.erb"
