@@ -7,6 +7,9 @@ Rails.application.routes.draw do
     get "/contact", to: "static_pages#contact"
     get "/sign", to: "users#new"
     post "/sign", to: "users#create"
+    get "/login", to: "sessions#new"
+    post "/login", to: "sessions#create"
+    delete "/logout", to: "sessions#destroy"
     resources :users, only: :show
   end
 end
