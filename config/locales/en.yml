@@ -40,6 +40,11 @@ en:
       rails: Ruby on Rails Tutorial
       michael: Michael Hartl
 
+  shared:
+    error_messages.html.erb:
+      content: "The form contains"
+      error: "Error"
+
   static_pages:
     home:
       title: "Home"
@@ -79,3 +84,11 @@ en:
       title: "New"
       description: "Newspaper"
       newcontent: "Find me in app/views/users/new.html.erb"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      confirmation: "Confirmation"
+      create: "Create my account"
+
+    create:
+      flash: "welcome sample"

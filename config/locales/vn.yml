@@ -31,6 +31,11 @@ vn:
   new: "Tin moi"
 
   #module
+  controllers:
+    users_controller:
+      flash: "Chao mung den ung dung"
+      render: "moi"
+
   layouts:
     layouts:
     header:
@@ -79,3 +84,11 @@ vn:
       title: "Tin moi"
       description: "Tin tuc"
       newcontent: "duong dan in app/views/users/new.html.erb"
+      name: "ten"
+      email: "dia chi hom thu"
+      password: "mat khau"
+      confirmation: "lap lai mat khau"
+      create: "tao tai khoan"
+
+    create:
+      flash: "chao mung"
