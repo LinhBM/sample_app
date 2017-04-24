@@ -37,7 +37,7 @@ vn:
       logo: "ung dung"
 
     footer:
-      footercontent: "%{rails} boi %{michael}"
+      content: "%{rails} boi %{michael}"
       rails: Ngon ngu da quy tren duong ngot
       michael: Michael Hartl
 
