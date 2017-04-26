@@ -20,16 +20,6 @@
 # available at http://guide.rubyonrails.org/i18n.html.
 
 vn:
-  title: "huong dan su dung"
-  english: "tieng anh"
-  vietnam: "tieng viet"
-  home: "Trang chu"
-  help: "Tro giup"
-  about: "Gioi thieu"
-  contact: "Lien he"
-  sign: "Dang nhap"
-  new: "Tin moi"
-
   #module
   controllers:
     users_controller:
@@ -38,13 +28,30 @@ vn:
 
   layouts:
     layouts:
+      application:
+      title: "huong dan su dung"
+
     header:
+      english: "tieng anh"
+      vietnam: "tieng viet"
       logo: "ung dung"
+      home: "Trang chu"
+      help: "Tro giup"
+      sign: "Dang nhap"
+      users: "Nguoi dung"
+      account: "Tai khoan"
+      profile: "Ho so"
+      setting: "Thiet lap"
+      logout: "Thoat ra"
+      login: "Dang nhap"
 
     footer:
       content: "%{rails} boi %{michael}"
       rails: Ngon ngu da quy tren duong ngot
       michael: Michael Hartl
+      about: "Gioi thieu"
+      contact: "Lien he"
+      new: "Tin moi"
 
   static_pages:
     home:
@@ -92,3 +99,14 @@ vn:
 
     create:
       flash: "chao mung"
+
+  sessions:
+    create:
+      createflash: "mat khau hoac tai khoan khong ton tai"
+
+    new:
+      title: "Dang nhap"
+      description: "Dang nhap nguoi dung"
+      signupnow: "Dang nhap"
+      login: "Dang nhap"
+      newuser: "Tai khoan moi?"

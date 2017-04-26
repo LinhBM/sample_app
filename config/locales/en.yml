@@ -20,25 +20,37 @@
 # available at http://guide.rubyonrails.org/i18n.html.
 
 en:
-  title: "Ruby on Rails Tutorial Sample App"
-  english: "English"
-  vietnam: "Vietnam"
-  home: "Home"
-  help: "Help"
-  about: "About"
-  contact: "Contact"
-  sign: "Log in"
-  new: "New"
-
   #module
+  controllers:
+    users_controller:
+      flash: "Welcome to the Sample App!"
+      render: "new"
+
   layouts:
+    application:
+      title: "Ruby on Rails Tutorial Sample App"
+
     header:
+      english: "English"
+      vietnam: "Vietnam"
+      home: "Home"
+      help: "Help"
       logo: "sample app"
+      users: "Users"
+      account: "Account"
+      profile: "Profile"
+      setting: "Setting"
+      logout: "Log out"
+      login: "Log in"
+
 
     footer:
       content: The %{rails} by %{michael}
       rails: Ruby on Rails Tutorial
       michael: Michael Hartl
+      about: "About"
+      contact: "Contact"
+      new: "New"
 
   shared:
     error_messages.html.erb:
@@ -92,3 +104,14 @@ en:
 
     create:
       flash: "welcome sample"
+
+  sessions:
+    create:
+      createflash: "Invalid user/password"
+
+    new:
+      title: "Log in"
+      description: "Log in"
+      signupnow: "Sign up now!"
+      login: "Log in"
+      newuser: "New user?"
