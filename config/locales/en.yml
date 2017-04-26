@@ -21,11 +21,13 @@
 
 en:
   #module
+  #controllers
   controllers:
     users_controller:
       flash: "Welcome to the Sample App!"
       render: "new"
 
+  #layouts
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
@@ -57,10 +59,7 @@ en:
       content: "The form contains"
       error: "Error"
 
-  shared:
-    error_messages.html.erb:
-      content: "The form contains"
-
+  #static_pages
   static_pages:
     home:
       title: "Home"
@@ -95,6 +94,7 @@ en:
         about the sample app at the %{tut}."
       contact: "contact page"
 
+  #users
   users:
     new:
       title: "New"
@@ -105,10 +105,39 @@ en:
       password: "Password"
       confirmation: "Confirmation"
       create: "Create my account"
+      flash: "id valid"
+
+    index:
+      title: "User list"
+      description: "All user"
 
     create:
       flash: "welcome sample"
 
+    update:
+      flash: "Profile updated"
+
+    destroy:
+      flash: "User deleted"
+
+    edit:
+      title: "Edit user"
+      description: "Update your profile"
+      button: "Save change"
+      flash: "Please log in."
+      change: "Change"
+
+    form:
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      confirmation: "Confirmation"
+
+    user:
+      delete: "Delete"
+      yousure: "You sure"
+
+  #sessions
   sessions:
     create:
       flashsuccess: "thanh cong"

@@ -27,8 +27,7 @@ vn:
       render: "moi"
 
   layouts:
-    layouts:
-      application:
+    application:
       title: "huong dan su dung"
 
     header:
@@ -53,6 +52,8 @@ vn:
       contact: "Lien he"
       new: "Tin moi"
 
+
+  #static_pages
   static_pages:
     home:
       title: "trang chu"
@@ -86,6 +87,7 @@ vn:
         ngon ngu ruby them %{tut}."
       contact: "trang lien he"
 
+  #users
   users:
     new:
       title: "Tin moi"
@@ -96,9 +98,37 @@ vn:
       password: "mat khau"
       confirmation: "lap lai mat khau"
       create: "tao tai khoan"
+      flash: "Tai khoan da ton tai"
+
+    index:
+      title: "Danh sach"
+      description: "Danh sach tai khoan"
 
     create:
       flash: "chao mung"
+
+    update:
+      flash: "Cap nhat thong tin moi"
+
+    destroy:
+      flash: "Tai khoan da xoa"
+
+    edit:
+      title: "Thay doi"
+      description: "Sua thong tin cua ban"
+      button: "Luu thay doi"
+      flash: "Moi ban dang nhap."
+      change: "Thay doi"
+
+    form:
+      name: "ten"
+      email: "dia chi hom thu"
+      password: "mat khau"
+      confirmation: "lap lai mat khau"
+
+    user:
+      delete: "Xoa"
+      yousure: "Ban co chac chan"
 
   sessions:
     create:
@@ -111,3 +141,4 @@ vn:
       signupnow: "Dang nhap"
       login: "Dang nhap"
       newuser: "Tai khoan moi?"
+      content: "Luu thong tin tren may tinh nay"

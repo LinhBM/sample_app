@@ -28,6 +28,10 @@ class User < ApplicationRecord
     BCrypt::Password.new(remember_digest).is_password? remember_token
   end
 
+  def current_user? user
+    self == user
+  end
+
   class << self
     def digest string
       cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
