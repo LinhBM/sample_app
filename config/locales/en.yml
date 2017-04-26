@@ -57,6 +57,10 @@ en:
       content: "The form contains"
       error: "Error"
 
+  shared:
+    error_messages.html.erb:
+      content: "The form contains"
+
   static_pages:
     home:
       title: "Home"
@@ -107,7 +111,8 @@ en:
 
   sessions:
     create:
-      createflash: "Invalid user/password"
+      flashsuccess: "thanh cong"
+      flashfaild: "Invalid user/password"
 
     new:
       title: "Log in"
@@ -115,3 +120,4 @@ en:
       signupnow: "Sign up now!"
       login: "Log in"
       newuser: "New user?"
+      content: "Remember me on this computer"
