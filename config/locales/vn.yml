@@ -104,8 +104,11 @@ vn:
       title: "Danh sach"
       description: "Danh sach tai khoan"
 
+    show:
+      error: "Tai khoan chua kich hoat"
+
     create:
-      flash: "chao mung"
+      info: "Hay kiem tra link kich hoat trong hom mail cua ban"
 
     update:
       flash: "Cap nhat thong tin moi"
@@ -130,10 +133,12 @@ vn:
       delete: "Xoa"
       yousure: "Ban co chac chan"
 
+  #sessions
   sessions:
     create:
-      flashsuccess: "thanh cong"
-      flashfaild: "tai khoan hoac mat khau khong ton tai"
+      danger: "tai khoan hoac mat khau khong ton tai"
+      warning: "Tai khoan chua kich hoat.
+        Kiem tra trong mail cua ban."
 
     new:
       title: "Dang nhap"
@@ -142,3 +147,31 @@ vn:
       login: "Dang nhap"
       newuser: "Tai khoan moi?"
       content: "Luu thong tin tren may tinh nay"
+
+  #account_activations_controller
+  account_activations:
+    edit:
+      success: "Tai khoan da duoc kick hoat"
+      danger: "Sai link kich hoat"
+
+  #user_mailer
+  user_mailer:
+    account_activation:
+      #view
+      description: "Mo ta ung dung"
+      say: "Chao"
+      content: "Chao mung den ung dung! Moi ban kich chuot vao duong link de
+        kich hoat tai khoan:"
+      activate: "kich hoat"
+
+      #not view
+      subject: "Tai khoan da kich hoat"
+
+    password_reset:
+      #app/mailers/user_mailer.rb
+      greeting: "xin chao"
+      to: "to@example.org"
+      #app/views/user_mailer/password_reset.html.erb
+      description: "Tai khoan#lam lai mat khau"
+      content: "duong dan trong app/views/user_mailer/password_reset.html.erb
+        </p>"
