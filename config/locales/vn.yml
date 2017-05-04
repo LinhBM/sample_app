@@ -145,7 +145,7 @@ vn:
       description: "Dang nhap nguoi dung"
       signupnow: "Dang nhap"
       login: "Dang nhap"
-      newuser: "Tai khoan moi?"
+      newuser: "Tai khoan moi? "
       content: "Luu thong tin tren may tinh nay"
 
   #account_activations_controller
@@ -169,9 +169,42 @@ vn:
 
     password_reset:
       #app/mailers/user_mailer.rb
-      greeting: "xin chao"
-      to: "to@example.org"
+      subject: "Mat khau da lam lai"
       #app/views/user_mailer/password_reset.html.erb
-      description: "Tai khoan#lam lai mat khau"
-      content: "duong dan trong app/views/user_mailer/password_reset.html.erb
-        </p>"
+      title: "User#password_reset"
+      description: "De lam lai mat khau, kich vao link duoi day"
+      link: "Lam lai mat khau"
+      content: "Duong link nay se co thoi han trong 2 gio. Neu ban khong muon
+        lam lai mat khau, thi bo qua link nay va mat khau cu se duoc giu
+        nguyen."
+
+  #password_resets
+  password_resets:
+    #view
+    edit:
+      title: "Lam lai mat khau"
+      description: "Lam lai mat khau"
+      password: "Mat khau"
+      confirmation: "Lap lai"
+      submit: "Thay doi mat khau"
+
+    new:
+      title: "Quen mat khau"
+      description: "Quen mat khau"
+      email: "Dia chi hom mail"
+      button: "Chap nhan"
+
+    #control
+    create:
+      info: "Da gui link lam lai mat khau"
+      danger: "Khong tim thay dia chi email"
+
+    update:
+      password: "khong duoc de trong"
+      success: "Mat khau thay doi thanh cong"
+
+    check_expiration:
+      danger: "link nay da het han?"
+
+    find_user:
+      danger: "Khong tim thay dia chi mail"
