@@ -110,9 +110,13 @@ en:
     index:
       title: "User list"
       description: "All user"
+      flash: "bug"
+
+    show:
+      error: "account_not_activated"
 
     create:
-      flash: "welcome sample"
+      info: "Please check your email to activate your account."
 
     update:
       flash: "Profile updated"
@@ -140,8 +144,9 @@ en:
   #sessions
   sessions:
     create:
-      flashsuccess: "thanh cong"
-      flashfaild: "Invalid user/password"
+      danger: "Invalid user/password"
+      warning: "Account not activated.
+        Check your email for the activation link."
 
     new:
       title: "Log in"
@@ -150,3 +155,31 @@ en:
       login: "Log in"
       newuser: "New user?"
       content: "Remember me on this computer"
+
+  #account_activations_controller
+  account_activations:
+    edit:
+      success: "Account activatied"
+      danger: "Invalid activation link"
+
+  #user_mailer
+  user_mailer:
+    account_activation:
+      #view
+      description: "Sample App"
+      say: "Hi"
+      content: "Welcome to the Sample App! Click on the link below to activate
+        your account:"
+      activate: "Activate"
+
+      #not view
+      subject: "Account activation"
+
+    password_reset:
+      #app/mailers/user_mailer.rb
+      greeting: "Hi"
+      to: "to@example.org"
+      #app/views/user_mailer/password_reset.html.erb
+      description: "User#password_reset"
+      content: "find me in app/views/user_mailer/password_reset.html.erb
+        </p>"
