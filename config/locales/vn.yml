@@ -20,11 +20,17 @@
 # available at http://guide.rubyonrails.org/i18n.html.
 
 vn:
-  #module
   controllers:
     users_controller:
       flash: "Chao mung den ung dung"
       render: "moi"
+
+  picture: "Khong duoc qua 5mb"
+
+  account_activations:
+    edit:
+      success: "Tai khoan da duoc kick hoat"
+      danger: "Sai link kich hoat"
 
   layouts:
     application:
@@ -52,8 +58,19 @@ vn:
       contact: "Lien he"
       new: "Tin moi"
 
+  shared:
+    error_messages:
+      content: "Trang chinh"
+      error: "Loi"
 
-  #static_pages
+    micropost_form:
+      content: "Tao noi dung moi..."
+      post: "Dang"
+
+    user_info:
+      view: "Xem ho so"
+      micropost: "bai viet"
+
   static_pages:
     home:
       title: "trang chu"
@@ -61,6 +78,7 @@ vn:
       homecontent: "day la trang chu %{org} voi mot vai vi du."
       org: "huong dan su dung ruby on rails"
       logo: "Dang nhap"
+      feed: "Tuong nha ban"
 
     help:
       title: "tro giup"
@@ -87,7 +105,6 @@ vn:
         ngon ngu ruby them %{tut}."
       contact: "trang lien he"
 
-  #users
   users:
     new:
       title: "Tin moi"
@@ -106,6 +123,8 @@ vn:
 
     show:
       error: "Tai khoan chua kich hoat"
+      flash: "Khong ton tai tai khoan nay"
+      micropost: "So luong bai dang"
 
     create:
       info: "Hay kiem tra link kich hoat trong hom mail cua ban"
@@ -133,7 +152,6 @@ vn:
       delete: "Xoa"
       yousure: "Ban co chac chan"
 
-  #sessions
   sessions:
     create:
       danger: "tai khoan hoac mat khau khong ton tai"
@@ -147,40 +165,27 @@ vn:
       login: "Dang nhap"
       newuser: "Tai khoan moi? "
       content: "Luu thong tin tren may tinh nay"
+      forgot: "Quen mat khau"
 
-  #account_activations_controller
-  account_activations:
-    edit:
-      success: "Tai khoan da duoc kick hoat"
-      danger: "Sai link kich hoat"
-
-  #user_mailer
   user_mailer:
     account_activation:
-      #view
       description: "Mo ta ung dung"
       say: "Chao"
       content: "Chao mung den ung dung! Moi ban kich chuot vao duong link de
         kich hoat tai khoan:"
       activate: "kich hoat"
-
-      #not view
       subject: "Tai khoan da kich hoat"
 
     password_reset:
-      #app/mailers/user_mailer.rb
-      subject: "Mat khau da lam lai"
-      #app/views/user_mailer/password_reset.html.erb
       title: "User#password_reset"
       description: "De lam lai mat khau, kich vao link duoi day"
       link: "Lam lai mat khau"
       content: "Duong link nay se co thoi han trong 2 gio. Neu ban khong muon
         lam lai mat khau, thi bo qua link nay va mat khau cu se duoc giu
         nguyen."
+      subject: "Mat khau da lam lai"
 
-  #password_resets
   password_resets:
-    #view
     edit:
       title: "Lam lai mat khau"
       description: "Lam lai mat khau"
@@ -194,7 +199,6 @@ vn:
       email: "Dia chi hom mail"
       button: "Chap nhan"
 
-    #control
     create:
       info: "Da gui link lam lai mat khau"
       danger: "Khong tim thay dia chi email"
@@ -208,3 +212,20 @@ vn:
 
     find_user:
       danger: "Khong tim thay dia chi mail"
+
+  microposts:
+    micropost:
+      posted: "Da dang "
+      ago: "truoc."
+      delete: "Xoa"
+      yousure: "Ban co chac chan?"
+
+    create:
+      success: "Bai viet da duoc tao"
+
+    destroy:
+      success: "Bai viet da bi xoa"
+
+  datetime:
+    distance_in_words:
+      x_days: "%{count} days"

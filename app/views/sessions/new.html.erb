@@ -18,7 +18,7 @@
 
       <%= f.submit t(".login"), class: "btn btn-primary" %>
 
-      <%= link_to "forgot password", new_password_reset_path %>
+      <%= link_to t(".forgot"), new_password_reset_path %>
     <% end %>
 
     <p><%= t ".newuser" %><%= link_to t(".signupnow"), sign_path %></p>
