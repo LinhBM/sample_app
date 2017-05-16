@@ -126,6 +126,19 @@ vn:
       flash: "Khong ton tai tai khoan nay"
       micropost: "So luong bai dang"
 
+    follow:
+      submit: "Theo doi"
+
+    unfollow:
+      submit: "Bo theo doi"
+
+    show_follow:
+      viewmyprofile: "Xem ho so ca nhan"
+
+    stats:
+      following: "Dang theo doi"
+      followers: "Duoc theo doi"
+
     create:
       info: "Hay kiem tra link kich hoat trong hom mail cua ban"
 
@@ -151,6 +164,12 @@ vn:
     user:
       delete: "Xoa"
       yousure: "Ban co chac chan"
+
+    following:
+      title: "Dang theo doi"
+
+    followers:
+      title: "Duoc theo doi"
 
   sessions:
     create:

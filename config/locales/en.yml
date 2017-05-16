@@ -21,10 +21,9 @@
 
 en:
   controllers:
-    users_controller:
+    users:
       flash: "Welcome to the Sample App!"
       render: "new"
-
 
   picture: "should be less than 5MB"
 
@@ -128,6 +127,19 @@ en:
       flash: "account not found"
       micropost: "Microposts"
 
+    follow:
+      submit: "Follow"
+
+    unfollow:
+      submit: "Unfollow"
+
+    show_follow:
+      viewmyprofile: "view my profile"
+
+    stats:
+      following: "following"
+      followers: "followers"
+
     create:
       info: "Please check your email to activate your account."
 
@@ -153,6 +165,12 @@ en:
     user:
       delete: "Delete"
       yousure: "You sure"
+
+    following:
+      title: "following"
+
+    followers:
+      title: "followers"
 
   sessions:
     create:
@@ -231,3 +249,7 @@ en:
   datetime:
     distance_in_words:
       x_days: "%{count} days"
+
+  relationships:
+    index:
+      danger: "data_not_exist"

@@ -24,7 +24,9 @@ class UsersController < ApplicationController
   end
 
   def show
-    @microposts = @user.microposts.paginate page: params[:page]
+    @microposts = @user.microposts.desc.paginate page: params[:page]
+    @follow = current_user.active_relationships.build
+    @unfollow = current_user.active_relationships.find_by followed_id: @user.id
     unless @user.activated
       flash[:error] = t ".error"
       redirect_to root_path
